@@ -165,7 +165,7 @@ from google.antigravity.types import Image, from_file
 
 config = LocalAgentConfig(system_instructions="You are an expert software architect.")
 async with Agent(config) as agent:
-    # 1. Flat filesystem shortcut (automatically resolves as types.Document)
+    # 1. Flat filesystem shortcut (automatically resolves as types.Document) 
     pdf_spec = from_file("spec.pdf")
     
     # 2. Direct constructor instantiation (perfect for in-memory raw bytes)
